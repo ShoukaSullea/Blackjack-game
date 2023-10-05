@@ -22,7 +22,6 @@ public:
 	value getValue() const { return this->currentValue; };
 	int getState() { return this->isRevealed; };
 	int flip() { return this->isRevealed ^= true; };
-
 	Card(int inpValue, int inpSuit);
 private:
 	value currentValue;
