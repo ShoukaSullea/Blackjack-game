@@ -21,12 +21,15 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Deck.cpp">
+    <ClCompile Include="Pack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cards.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pack.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
