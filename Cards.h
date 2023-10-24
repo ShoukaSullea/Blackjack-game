@@ -3,11 +3,8 @@
 #define CARDS_H
 
 #include <iostream>
-#include <ctime>
 
-
-
-class Card {
+class card {
 public:
 	enum class suit  {
 		hearts,
@@ -28,7 +25,7 @@ public:
 	int getState() { return this->isRevealed; };
 	int flip() { return this->isRevealed = !isRevealed; };
 
-	Card(int inpValue, int inpSuit);
+	card(int inpValue, int inpSuit);
 private:
 	value currentValue;
 	suit currentSuit;

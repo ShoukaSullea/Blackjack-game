@@ -5,9 +5,9 @@
 #define PACK_H
 
 
-std::vector<Card> fillPack(std::vector<Card>& vec);
-std::vector<Card> shufflePack(std::vector<Card>& vec);
-std::vector<Card> DecksInitiate(std::vector<Card>& vec, std::vector<Card>& vec2, std::vector<Card>& vec3);
-int PackValue(std::vector<Card> vec);
-std::vector<Card> packHit(std::vector<Card>& vec, std::vector<Card>& vec2);
+std::vector<card> fillPack(std::vector<card>& vec);
+std::vector<card> shufflePack(std::vector<card>& vec);
+std::vector<card> decksInitiate(std::vector<card>& vec, std::vector<card>& vec2, std::vector<card>& vec3);
+int packValue(std::vector<card> vec);
+std::vector<card> packHit(std::vector<card>& vec, std::vector<card>& vec2);
 #endif 

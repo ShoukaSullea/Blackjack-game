@@ -1,24 +1,22 @@
 #include "cards.h"
 
 
-Card::Card(int inpValue, int inpSuit) :
+card::card(int inpValue, int inpSuit) :
 	currentValue(static_cast<value>(inpValue)),
 	currentSuit(static_cast<suit>(inpSuit)) {}
 
-int Card::getValue() {
+int card::getValue() {
 	switch (static_cast<int>(currentValue)) {
 	case 0: 
 		return 11;
 	case 10: case 11: case 12:
 		return 10; 
 
-	
-
 	default: return (static_cast<int>(currentValue)+1);
 	}
 }
 
-std::string Card::getRank(){
+std::string card::getRank(){
 	switch (currentValue) {
 	case value::ACE: return "A"; break;
 	case value::TWO: return "2"; break;
@@ -37,7 +35,7 @@ std::string Card::getRank(){
 	}
 };
 
-std::string Card::getSuit() {
+std::string card::getSuit() {
 	switch (currentSuit) {
 	case suit::clubs : return "C"; break;
 	case suit::hearts: return "H"; break;
