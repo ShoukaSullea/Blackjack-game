@@ -7,7 +7,7 @@
 
 std::vector<Card> fillPack(std::vector<Card>& vec);
 std::vector<Card> shufflePack(std::vector<Card>& vec);
-std::vector<Card> pDeckInitiate(std::vector<Card>& vec);
-std::vector<Card> hDeckInitiate(std::vector<Card>& vec);
-
-#endif DECK_H
+std::vector<Card> DecksInitiate(std::vector<Card>& vec, std::vector<Card>& vec2, std::vector<Card>& vec3);
+int PackValue(std::vector<Card> vec);
+std::vector<Card> packHit(std::vector<Card>& vec, std::vector<Card>& vec2);
+#endif 
