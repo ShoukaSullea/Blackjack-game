@@ -1,4 +1,4 @@
-#include "cards.h"
+#include "Cards.h"
 
 
 card::card(int inpValue, int inpSuit) :
